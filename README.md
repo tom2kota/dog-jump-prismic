@@ -5,6 +5,8 @@ Prismic is a CMS backend for your websites & apps - optimised for developer prod
 - [Quick start for developers](https://prismic.io/quickstart)
 - [User guides for content teams](https://user-guides.prismic.io/)
 - [Prismic documentation](https://prismic.io/docs)
+- [Start a Prismic project from scratch with React.js](https://prismic.io/docs/reactjs/getting-started/getting-started-from-scratch)
+- [Integrating Prismic with an existing Javascript project](https://prismic.io/docs/javascript/getting-started/integrating-with-an-existing-javascript-project)
 
 -----------------
 
