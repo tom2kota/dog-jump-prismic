@@ -2,6 +2,8 @@
 
 Prismic is a CMS backend for your websites & apps - optimised for developer productivity with a visual builder to model page & post content. Api-based for technology freedom - use your favorite programming language & framework.
 
+- [Quick start for developers](https://prismic.io/quickstart)
+- [User guides for content teams](https://user-guides.prismic.io/)
 
 -----------------
 
