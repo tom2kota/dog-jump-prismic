@@ -69,6 +69,31 @@ prismic-cli@3.7.11
 
 -----------------
 
+## High five, you deserve it!
+
+- A repository is where your website’s content will live => [prismic.io](https://prismic.io/dashboard) => All Repos
+    * All our pricing plans are per repository. 
+      A repository is an independent working space with its own content, 
+      set of users, endpoint, and subscription. You can have as many repositories 
+      as you want and each repo will have its own subscription. 
+      You can adjust each repo's plan and subscription 
+      in the Settings / Plans & Billing through your dashboard.
+- Select language from the list
+- Build your first custom type => [homepage.json](https://repository-name.prismic.io/masks/homepage.json/) => use it later for querying the page
+    * Custom types allow you to define and configure fields for your content. 
+      Define custom types for pages, posts, events, authors, products, places,
+      - Repeatable type - Best for multiple instances like blog posts, authors, products... 
+      - Single Type - Best for a unique page, like the homepage or privacy policy page...
+- Add the repository URL to your configuration
+``` 
+//  src/prismic-configuration.js
+
+export const apiEndpoint: "https://repository-name.prismic.io/api/v2"
+```
+- Edit the page (Homepage) => Save => Publish
+
+-----------------
+
 ## P.S.
 
 - [A List of Content Management Systems for Jamstack Sites:](https://jamstack.org/headless-cms/)
