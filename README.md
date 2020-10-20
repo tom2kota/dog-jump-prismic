@@ -64,6 +64,11 @@ prismic-cli@3.7.11
 
 -----------------
 
+- [API Browser](https://tom2kota.prismic.io/api)
+- [API Browser](https://tom2kota.cdn.prismic.io/api/v2)
+
+-----------------
+
 ## P.S.
 
 - [A List of Content Management Systems for Jamstack Sites:](https://jamstack.org/headless-cms/)
