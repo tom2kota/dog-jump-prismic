@@ -1,10 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-/**
- * Page not found (404) componenet
- */
-const NotFound = () => {
+export const NotFound = () => {
   return (
     <div className="not-found" style={notFoundStyle}>
       <h1>404</h1>
@@ -21,5 +18,3 @@ const notFoundStyle = {
   height: '50vw',
   alignItems: 'center'
 }
-
-export default NotFound

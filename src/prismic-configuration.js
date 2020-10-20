@@ -11,9 +11,9 @@ const accessToken = ''
 // -- Link resolution rules
 // Manages the url links to internal Prismic documents
 export const linkResolver = (doc) => {
-  if (doc.type === 'page') return `/page/${doc.uid}`
-  return '/'
+    if (doc.type === 'page') return `/page/${doc.uid}`
+    return '/'
 }
 
 // Client method to query documents from the Prismic repo
-export const client = Prismic.client(apiEndpoint, { accessToken })
+export const client = Prismic.client(apiEndpoint, {accessToken})
