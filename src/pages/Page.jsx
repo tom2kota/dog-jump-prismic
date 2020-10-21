@@ -13,7 +13,7 @@ export const Page = ({match}) => {
     useEffect(() => {
         const fetchPrismicData = async () => {
             try {
-                const pageDoc = await client.getByUID('page', uid, {});
+                const pageDoc = await client.getByUID('page', `${uid}`, {});
                 const menuDoc = await client.getSingle('menu', {});
 
                 if (pageDoc) {

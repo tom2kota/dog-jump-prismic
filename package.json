@@ -1,5 +1,5 @@
 {
-  "name": "dog-jump-prosmic-react",
+  "name": "dog-jump-prismic-react",
   "version": "0.2.0",
   "private": true,
   "dependencies": {
@@ -14,7 +14,7 @@
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "react-scripts": "^3.2.0"
+    "react-scripts": "^3.4.4"
   },
   "scripts": {
     "start": "react-scripts start",

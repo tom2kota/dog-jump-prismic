@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React  from 'react'
 import {Helmet} from 'react-helmet'
 import {
     BrowserRouter,
@@ -18,14 +18,14 @@ export const App = () => {
     const repoName = repoNameArray[1]
 
     return (
-        <Fragment>
+        <>
             <Helmet>
                 <script async defer src={`//static.cdn.prismic.io/prismic.js?repo=${repoName}&new=true`}/>
             </Helmet>
             <BrowserRouter>
                 <Switch>
-                    {/*<Redirect exact from='/' to='/homepage'/>*/}
-                    <Redirect exact from='/' to='/page/dog'/>
+                    <Redirect exact from='/' to='/homepage'/>
+                    {/*<Redirect exact from='/' to='/page/dog'/>*/}
                     <Route exact component={Homepage}/>
                     <Route exact path='/help' component={Help}/>
                     <Route exact path='/preview' component={Preview}/>
@@ -33,6 +33,6 @@ export const App = () => {
                     <Route component={NotFound}/>
                 </Switch>
             </BrowserRouter>
-        </Fragment>
+        </>
     )
 }
