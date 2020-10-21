@@ -1,10 +1,29 @@
 # Prismic + React App - Dog jump!
 
-[DEMO](https://dog-jump-prismic.vercel.app)
+### [DEMO](https://dog-jump-prismic.vercel.app)
 
 Prismic is a CMS backend for your websites & apps - optimised for developer productivity with a visual builder 
 to model page & post content. Api-based for technology freedom - use your favorite programming language & framework
 
+-----------------
+
+#### [Examples:](https://user-guides.prismic.io/en/collections/22783-examples):
+
+- React.js Samples:
+    * [Sample Blog with API-based CMS in ReactJS](https://user-guides.prismic.io/en/articles/2685559-sample-blog-with-api-based-cms-in-reactjs)
+    * [Sample Multi-Page Site with Navigation in ReactJS](https://user-guides.prismic.io/en/articles/2731304-sample-multi-page-site-with-navigation-in-reactjs)
+- Next.js Samples:
+    * [Sample Blog with API-based CMS in Next.js](https://user-guides.prismic.io/en/articles/2882569-sample-blog-with-api-based-cms-in-next-js)    
+    * [Sample Multi-Page Site with Navigation in Next.js](https://user-guides.prismic.io/en/articles/2907799-sample-multi-page-site-with-navigation-in-next-js)
+- Gatsby.js Samples:
+    * [Sample Blog with API-based CMS & Gatsby.js](https://user-guides.prismic.io/en/articles/2933292-sample-blog-with-api-based-cms-gatsby-js)
+    * [Multi-language website example with Gatsby.js](https://user-guides.prismic.io/en/articles/3601217-multi-language-website-example-with-gatsby-js)
+        
+    
+-----------------
+
+#### LINKS:
+    
 - [Quick start for developers](https://prismic.io/quickstart)
 - [User guides for content teams](https://user-guides.prismic.io/)
 - [Prismic documentation](https://prismic.io/docs)
