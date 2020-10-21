@@ -9,6 +9,7 @@ import {
 import {apiEndpoint} from './prismic-configuration'
 import {Help, Preview, NotFound} from './pages'
 import {Page} from "./pages/Page";
+import {Homepage} from "./pages/Homepage";
 
 const App = (props) => {
     const repoNameArray = /([^/]+)\.cdn.prismic\.io\/api/.exec(apiEndpoint)
@@ -22,6 +23,7 @@ const App = (props) => {
             <BrowserRouter>
                 <Switch>
                     <Redirect exact from='/' to='/homepage'/>
+                    <Route exact component={Homepage}/>
                     <Route exact path='/help' component={Help}/>
                     <Route exact path='/preview' component={Preview}/>
                     <Route exact path='/page/:uid' component={Page}/>
