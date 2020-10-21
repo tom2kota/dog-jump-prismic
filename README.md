@@ -1,6 +1,8 @@
-# Prismic + React App - Dog jump!
+# Prismic CMS + React App
 
-### [DEMO](https://dog-jump-prismic.vercel.app)
+### [DEMO HOMEPAGE](https://react-prismic.vercel.app)
+### [DEMO HELP](https://react-prismic.now.sh/help)
+### [DEMO DOG](https://dog-jump-prismic.vercel.app/page/dog)
 
 Prismic is a CMS backend for your websites & apps - optimised for developer productivity with a visual builder 
 to model page & post content. Api-based for technology freedom - use your favorite programming language & framework
@@ -37,7 +39,7 @@ to model page & post content. Api-based for technology freedom - use your favori
 
 #### Install the Prismic command line interface
 prismic-cli@3.7.11
-
+*(MAKE SURE YOU'RE USING THE LATEST VERSION OF THE CLI)*
 ```
   npm install -g prismic-cli
 ```
@@ -188,8 +190,6 @@ export const apiEndpoint: "https://repository-name.cdn.prismic.io/api/v2"
 - [JavaScript development for prismic.io API v2](https://www.npmjs.com/package/prismic-javascript)
 
 -----------------
-
-[![Dependency Status](https://david-dm.org/prismicio/reactjs-starter.svg)](https://david-dm.org/prismicio/reactjs-starter)
 
 # Prismic React Starter
 This project has been created with [`create-react-app`](https://github.com/facebookincubator/create-react-app). We added a zest of [prismic](https://github.com/prismicio/javascript-kit) inside it. It serves as a boilerplate React+Prismic application that will serves as a quick guide to get your own applications off the ground

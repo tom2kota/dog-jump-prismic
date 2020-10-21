@@ -21,7 +21,7 @@ const App = (props) => {
             </Helmet>
             <BrowserRouter>
                 <Switch>
-                    <Redirect exact from='/' to='/page/dog'/>
+                    <Redirect exact from='/' to='/homepage'/>
                     <Route exact path='/help' component={Help}/>
                     <Route exact path='/preview' component={Preview}/>
                     <Route exact path='/page/:uid' component={Page}/>
