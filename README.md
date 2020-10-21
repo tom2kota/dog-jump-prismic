@@ -7,6 +7,8 @@
 Prismic is a CMS backend for your websites & apps - optimised for developer productivity with a visual builder 
 to model page & post content. Api-based for technology freedom - use your favorite programming language & framework
 
+[API browser](https://tom2kota.prismic.io/settings/apps/) => [tom2kota.prismic.io/api](https://tom2kota.prismic.io/api)
+
 -----------------
 
 #### [Examples:](https://user-guides.prismic.io/en/collections/22783-examples):
@@ -21,11 +23,13 @@ to model page & post content. Api-based for technology freedom - use your favori
     * [Sample Blog with API-based CMS & Gatsby.js](https://user-guides.prismic.io/en/articles/2933292-sample-blog-with-api-based-cms-gatsby-js)
     * [Multi-language website example with Gatsby.js](https://user-guides.prismic.io/en/articles/3601217-multi-language-website-example-with-gatsby-js)
         
-    
+
 -----------------
 
 #### LINKS:
-    
+
+- [Creating a 2 level Navigation Menu](https://user-guides.prismic.io/en/articles/1075048-creating-a-2-level-navigation-menu)    
+- [Creating a 3+ level Navigation Menu](https://user-guides.prismic.io/en/articles/2888625-creating-a-3-level-navigation-menu)
 - [Quick start for developers](https://prismic.io/quickstart)
 - [User guides for content teams](https://user-guides.prismic.io/)
 - [Prismic documentation](https://prismic.io/docs)
@@ -180,6 +184,84 @@ export const apiEndpoint: "https://repository-name.cdn.prismic.io/api/v2"
 - [How to Query the API with React](https://prismic.io/docs/reactjs/query-the-api/how-to-query-the-api)
 
 
+
+-----------------
+
+### Create MENU in Dashboard for:
+*[Adding the navigation](https://www.slicemachine.dev/documentation/next/next-nav-bars-and-menus/)*
+
+``` 
+    // Homepage.jsx
+
+    const homeDoc = await client.getSingle('homepage', {});
+    const menuDoc = await client.getSingle('menu', {});
+```
+
+###### Create ```menu``` page (based on menu custom type) in Dashboard and add few links there
+
+Visit the repository you have just created in your browser. 
+It will show in your Prismic Dashboard, just as any other repositories you create. 
+Select your master language, and it's time to create some content! 
+Start off by creating a homepage, and a couple pages that we can navigate to.
+
+Go to Content and hit New, choose the Homepage type. 
+Fill in the content for the homepage banner, add some slices of content to flesh out the page content. 
+Save and publish!
+
+Now, create two information pages. 
+Go to Content, hit New, and select the Page type. 
+Make sure to fill the mandatory UID fields that is used for that page's URL. 
+Add some content slices, then save and publish!
+
+Create the navigation menu
+Let’s fill in the menu with your pages.
+Go to Content, hit New, and choose the Menu type. 
+Give the menu a title, and add all your pages.
+For each page you want to add to the navigation bar: 
+
+Add a Link Label 
+Click on Link, then “What kind of link do you want to insert?,” select “Link to a Document,” 
+and select the appropriate page.
+Save and publish!
+
+``` 
+    // Custom Types:  https://tom2kota.prismic.io/masks/menu.json/    
+    
+    {
+      "Main" : {
+        "title" : {
+          "type" : "StructuredText",
+          "config" : {
+            "placeholder" : "Menu title...",
+            "single" : "heading1"
+          }
+        },
+        "menu_links" : {
+          "type" : "Group",
+          "config" : {
+            "fields" : {
+              "label" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph",
+                  "label" : "Link Label",
+                  "placeholder" : "Link Label..."
+                }
+              },
+              "link" : {
+                "type" : "Link",
+                "config" : {
+                  "label" : "Link",
+                  "placeholder" : "Select a Link..."
+                }
+              }
+            },
+            "label" : "Menu Links"
+          }
+        }
+      }
+    }
+```
 
 -----------------
 
