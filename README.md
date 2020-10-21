@@ -11,7 +11,8 @@ to model page & post content. Api-based for technology freedom - use your favori
 
 -----------------
 
-#### [Examples:](https://user-guides.prismic.io/en/collections/22783-examples):
+## [IMPORT CUSTOM TYPES](https://github.com/prismicio/reactjs-website/tree/master/custom_types):
+#### [Examples](https://user-guides.prismic.io/en/collections/22783-examples):
 
 - React.js Samples:
     * [Sample Blog with API-based CMS in ReactJS](https://user-guides.prismic.io/en/articles/2685559-sample-blog-with-api-based-cms-in-reactjs)
