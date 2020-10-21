@@ -41,12 +41,12 @@ export const Homepage = () => {
                 >
                     <SliceZone sliceZone={homeDoc.data.page_content}/>
 
-                    <div> homeDoc
-                        <div>{console.log('homeDoc: ', homeDoc)}</div>
-                    </div>
-                    <div> menuDoc
-                        <div>{console.log('menuDoc: ', menuDoc)}</div>
-                    </div>
+                    {/*<div> homeDoc*/}
+                    {/*    <div>{console.log('homeDoc: ', homeDoc)}</div>*/}
+                    {/*</div>*/}
+                    {/*<div> menuDoc*/}
+                    {/*    <div>{console.log('menuDoc: ', menuDoc)}</div>*/}
+                    {/*</div>*/}
 
                 </DefaultLayout>
             </>

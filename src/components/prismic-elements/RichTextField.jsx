@@ -1,17 +1,12 @@
 import React from 'react';
-import { RichText } from 'prismic-reactjs';
-import { linkResolver } from '../../prismic-configuration';
-import { customLink } from '../../utils/prismicHelpers';
+import {RichText} from 'prismic-reactjs';
+import {linkResolver} from '../../prismic-configuration';
+import {customLink} from '../../utils/prismicHelpers';
 
-/**
- * Helper component for Prismic Rich Text fields
- */
-export const RichTextField = ({ field }) => {
-    return (
-        <RichText
-            render={field}
-            linkResolver={linkResolver}
-            serializeHyperlink={customLink}
-        />
-    );
-}
+export const RichTextField = ({field}) => (
+    <RichText
+        render={field}
+        linkResolver={linkResolver}
+        serializeHyperlink={customLink}
+    />
+)

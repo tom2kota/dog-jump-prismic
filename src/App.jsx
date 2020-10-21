@@ -24,7 +24,8 @@ export const App = () => {
             </Helmet>
             <BrowserRouter>
                 <Switch>
-                    <Redirect exact from='/' to='/homepage'/>
+                    {/*<Redirect exact from='/' to='/homepage'/>*/}
+                    <Redirect exact from='/' to='/page/dog'/>
                     <Route exact component={Homepage}/>
                     <Route exact path='/help' component={Help}/>
                     <Route exact path='/preview' component={Preview}/>
