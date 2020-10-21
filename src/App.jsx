@@ -11,7 +11,7 @@ import {Help, Preview, NotFound} from './pages'
 import {Page} from "./pages/Page";
 import {Homepage} from "./pages/Homepage";
 
-const App = (props) => {
+export const App = (props) => {
     const repoNameArray = /([^/]+)\.cdn.prismic\.io\/api/.exec(apiEndpoint)
     const repoName = repoNameArray[1]
 
@@ -33,5 +33,3 @@ const App = (props) => {
         </Fragment>
     )
 }
-
-export default App
