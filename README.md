@@ -2,7 +2,7 @@
 
 ### [DEMO HOMEPAGE](https://react-prismic.vercel.app)
 ### [DEMO HELP](https://react-prismic.now.sh/help)
-### [DEMO DOG](https://dog-jump-prismic.vercel.app/page/dog)
+### [DEMO ADMIN PANEL DASHBOARD](https://tom2kota.prismic.io/documents/working/)
 
 Prismic is a CMS backend for your websites & apps - optimised for developer productivity with a visual builder 
 to model page & post content. Api-based for technology freedom - use your favorite programming language & framework

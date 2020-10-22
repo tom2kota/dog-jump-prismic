@@ -4,6 +4,7 @@ import {DefaultLayout} from "../components/layout/DefaultLayout";
 import {HomepageBanner} from "../components/HomepageBanner";
 import {SliceZone} from "../components/SliceZone";
 import {NotFound} from "./NotFound";
+import {Loader} from "../components/layout/Loader";
 
 export const Homepage = () => {
     const [prismicData, setPrismicData] = useState({homeDoc: null, menuDoc: null});
