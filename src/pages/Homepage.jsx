@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from "react"
 import {client} from "../prismic-configuration";
-import {NotFound} from "./NotFound";
 import {DefaultLayout} from "../components/layout/DefaultLayout";
+import {HomepageBanner} from "../components/HomepageBanner";
 import {SliceZone} from "../components/SliceZone";
+import {NotFound} from "./NotFound";
 
 export const Homepage = () => {
     const [prismicData, setPrismicData] = useState({homeDoc: null, menuDoc: null});
@@ -39,15 +40,13 @@ export const Homepage = () => {
                     wrapperClass="homepage"
                     menuDoc={menuDoc}
                 >
-                    <SliceZone sliceZone={homeDoc.data.page_content}/>
+                    <HomepageBanner
+                        banner={homeDoc.data.homepage_banner[0]}
+                    />
 
-                    {/*<div> homeDoc*/}
-                    {/*    <div>{console.log('homeDoc: ', homeDoc)}</div>*/}
-                    {/*</div>*/}
-                    {/*<div> menuDoc*/}
-                    {/*    <div>{console.log('menuDoc: ', menuDoc)}</div>*/}
-                    {/*</div>*/}
-
+                    <SliceZone
+                        sliceZone={homeDoc.data.page_content}
+                    />
                 </DefaultLayout>
             </>
         )
