@@ -274,6 +274,31 @@ Save and publish!
 
 -----------------
 
+### SCREENSHOTS:
+
+- ![image](./docs/prismic-dashboard-1.png)
+- ![image](./docs/prismic-dashboard-2.png)
+- ![image](./docs/prismic-dashboard-3.png)
+- ![image](./docs/prismic-dashboard-4.png)
+- ![image](./docs/prismic-dashboard-5.png)
+- ![image](./docs/prismic-dashboard-6.png)
+- ![image](./docs/prismic-dashboard-7.png)
+- ![image](./docs/prismic-dashboard-8.png)
+- ![image](./docs/prismic-dashboard-9.png)
+- ![image](./docs/prismic-dashboard-10.png)
+- ![image](./docs/prismic-dashboard-11.png)
+- ![image](./docs/prismic-dashboard-12.png)
+- ![image](./docs/prismic-dashboard-13.png)
+- ![image](./docs/prismic-dashboard-14.png)
+- ![image](./docs/prismic-dashboard-15.png)
+- ![image](./docs/prismic-dashboard-16.png)
+- ![image](./docs/prismic-dashboard-17.png)
+- ![image](./docs/prismic-dashboard-18.png)
+- ![image](./docs/prismic-dashboard-19.png)
+
+
+-----------------
+
 # Prismic React Starter
 This project has been created with [`create-react-app`](https://github.com/facebookincubator/create-react-app). We added a zest of [prismic](https://github.com/prismicio/javascript-kit) inside it. It serves as a boilerplate React+Prismic application that will serves as a quick guide to get your own applications off the ground
 
