@@ -11,25 +11,29 @@ export const accessToken = ''
 // Client method to query documents from the Prismic repo
 export const client = Prismic.client(apiEndpoint, {accessToken})
 
+export const linkResolver = (doc) => {
+    if (doc.type === 'page') return `/${doc.uid}`
+    return '/'
+}
 
 // -- Link resolution rules - https://prismic.io/docs/reactjs/beyond-the-api/link-resolving
 // Manages the url links to internal Prismic documents
-export const linkResolver = (doc) => {
-    // URL for a category type
-    if (doc.type === 'blog') {
-        return `/post/${doc.uid}`
-    }
-    if (doc.type === 'category') {
-        return `/category/${doc.uid}`
-    }
-    // URL for a product type
-    if (doc.type === 'product') {
-        return `/product/${doc.uid}`
-    }
-    // URL for a page type
-    if (doc.type === 'page') {
-        return `/${doc.uid}`
-    }
-    // Backup for all other types
-    return '/'
-}
+// export const linkResolver = (doc) => {
+//     // URL for a category type
+//     if (doc.type === 'blog') {
+//         return `/post/${doc.uid}`
+//     }
+//     if (doc.type === 'category') {
+//         return `/category/${doc.uid}`
+//     }
+//     // URL for a product type
+//     if (doc.type === 'product') {
+//         return `/product/${doc.uid}`
+//     }
+//     // URL for a page type
+//     if (doc.type === 'page') {
+//         return `/${doc.uid}`
+//     }
+//     // Backup for all other types
+//     return '/'
+// }
